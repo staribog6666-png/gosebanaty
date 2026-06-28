@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГосЕбанаты</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f0f4f8; }
+    header {
+      background: #0033a0; color: white; padding: 15px 20px;
+      display: flex; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .logo { font-size: 28px; font-weight: bold; }
+    .logo span { color: #ffcc00; }
+    .hero {
+      background: linear-gradient(135deg, #0033a0, #0055cc);
+      color: white; text-align: center; padding: 60px 20px;
+    }
+    .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white; padding: 20px; border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;
+    }
+    button {
+      background: #ff3333; color: white; border: none;
+      padding: 14px 28px; font-size: 17px; border-radius: 8px;
+      margin-top: 15px; cursor: pointer;
+    }
+    button:hover { background: #cc0000; }
+    .cabinet {
+      background: white; padding: 40px; border-radius: 12px;
+      margin-top: 40px; text-align: center; border: 4px dashed #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ГОС<span>ЕБАНАТЫ</span></div>
+  </header>
+
+  <div class="hero">
+    <h1>ГОСУДАРСТВЕННЫЕ ЕБАНАТЫ</h1>
+    <p>Портал для настоящих патриотов и даунов</p>
+  </div>
+
+  <div class="container">
+    <h2 style="text-align:center; color:#0033a0;">Популярные услуги</h2>
+    
+    <div class="services">
+      <div class="card">
+        <h3>Путин говорит</h3>
+        <button onclick="putinQuote()">Нажми</button>
+      </div>
+
+      <div class="card">
+        <h3>Шаман заряжает</h3>
+        <button onclick="shamanQuote()">Вызвать шамана</button>
+      </div>
+
+      <div class="card">
+        <h3>Мизулина вещает</h3>
+        <button onclick="mizulinaQuote()">Спросить Мизулину</button>
+      </div>
+    </div>
+
+    <div class="cabinet">
+      <h2>Личный кабинет ебаната</h2>
+      <p><strong>ФИО:</strong> Долбоёб Иванович Пиздецов</p>
+      <p><strong>Статус:</strong> Главный овощ РФ</p>
+      <p><strong>Даунпоинты:</strong> 1488</p>
+      <button onclick="alert('Поздравляем! Вы официально даун высшей категории! +100500 даунпоинтов')">Получить пиздец</button>
+    </div>
+  </div>
+
+  <script>
+    function putinQuote() {
+      const q = ["Я ворую и мне похуй.", "Крым наш, а вы все лохи.", "Это не война, это СВО (Специальная Въебательная Операция).", "Я президент всех времён и народов, бля."];
+      alert("🦅 Путин сказал:\n\n" + q[Math.floor(Math.random()*q.length)]);
+    }
+
+    function shamanQuote() {
+      const q = ["Я узкий, ты входи до конца!", "Барабаны бьют — хуйня летит!", "Духи предков говорят: иди нахуй.", "Шаман сказал — шаман сделал."];
+      alert("🪘 Шаман поёт:\n\n" + q[Math.floor(Math.random()*q.length)]);
+    }
+
+    function mizulinaQuote() {
+      const q = ["Я слушаю только гимн Америки и шамана.", "Традиционные ценности — это когда все в позе рака.", "Запретим всех, кто мне не нравится.", "Дети должны смотреть только геев и шамана."];
+      alert("👵 Мизулина сказала:\n\n" + q[Math.floor(Math.random()*q.length)]);
+    }
+  </script>
+
+</body>
+</html>
