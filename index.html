@@ -57,12 +57,10 @@
         <h3>Путин говорит</h3>
         <button onclick="putinQuote()">Нажми</button>
       </div>
-
       <div class="card">
         <h3>Шаман заряжает</h3>
         <button onclick="shamanQuote()">Вызвать шамана</button>
       </div>
-
       <div class="card">
         <h3>Мизулина вещает</h3>
         <button onclick="mizulinaQuote()">Спросить Мизулину</button>
@@ -83,17 +81,14 @@
       const q = ["Я ворую и мне похуй.", "Крым наш, а вы все лохи.", "Это не война, это СВО (Специальная Въебательная Операция).", "Я президент всех времён и народов, бля."];
       alert("🦅 Путин сказал:\n\n" + q[Math.floor(Math.random()*q.length)]);
     }
-
     function shamanQuote() {
       const q = ["Я узкий, ты входи до конца!", "Барабаны бьют — хуйня летит!", "Духи предков говорят: иди нахуй.", "Шаман сказал — шаман сделал."];
       alert("🪘 Шаман поёт:\n\n" + q[Math.floor(Math.random()*q.length)]);
     }
-
     function mizulinaQuote() {
       const q = ["Я слушаю только гимн Америки и шамана.", "Традиционные ценности — это когда все в позе рака.", "Запретим всех, кто мне не нравится.", "Дети должны смотреть только геев и шамана."];
       alert("👵 Мизулина сказала:\n\n" + q[Math.floor(Math.random()*q.length)]);
     }
   </script>
-
 </body>
 </html>
